@@ -21,15 +21,25 @@ else
 	echo "skipping..."
 fi
 }
+
 function update_and_upgrade () {
 apt-get update
 apt-get upgrade
 }
-should update_and_upgrade
-#clamtk seems borked, or im just an idiot
-#apt-get install clamtk
-#freshclam
+function edit_lightdm () {
+echo "allow-guest=false" >> /etc/lightdm/lightdm.conf
+}
+function enable_ufw_firewall () {
 apt-get install ufw
-#ufw enable
+ufw enable
 ufw status
-wait
+}
+function enable_clamtk () {
+apt-get install clamtk
+freshclam
+}
+
+should update_and_upgrade
+should edit_lightdm
+should enable_ufw_firewall
+should enable_clamtk
