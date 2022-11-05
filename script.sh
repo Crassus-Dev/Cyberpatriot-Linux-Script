@@ -12,7 +12,7 @@ function wait () {
 	fi
 }
 function should () {
-	echo "should I "$1" (y|n)"
+	echo "should I \"$1\" (y|n)"
 	read -r user_input
 	if [ $user_input == 'y' ]
 	then
@@ -27,7 +27,12 @@ function update_and_upgrade () {
 	apt-get upgrade
 }
 function edit_lightdm () {
-	status = which lightdm	
+	# Did you mean to use it?
+	status = which lightdm
+	# 1) What if there is already an entry of 'allow-guest=true' or 'allow-guest=false' ?
+	# 2) Supposedly condif can aloso be here too:
+	# /usr/share/lightdm/lightdm.conf.d/*.conf
+	# /etc/lightdm/lightdm.conf.d/*.conf
 	echo "allow-guest=false" >> /etc/lightdm/lightdm.conf
 }
 function enable_ufw_firewall () {
