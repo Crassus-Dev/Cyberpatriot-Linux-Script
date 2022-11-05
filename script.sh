@@ -30,7 +30,7 @@ function edit_lightdm () {
 	# Did you mean to use it?
 	status = which lightdm
 	# 1) What if there is already an entry of 'allow-guest=true' or 'allow-guest=false' ?
-	# 2) Supposedly condif can aloso be here too:
+	# 2) Supposedly configs can also be here too:
 	# /usr/share/lightdm/lightdm.conf.d/*.conf
 	# /etc/lightdm/lightdm.conf.d/*.conf
 	echo "allow-guest=false" >> /etc/lightdm/lightdm.conf
