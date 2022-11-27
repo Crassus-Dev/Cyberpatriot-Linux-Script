@@ -90,6 +90,8 @@ function search_for_prohibited_files () {
 	find / -type f -name "*.jpg" >> possible_prohibited_files.txt
 	find / -type f -name "*.jpeg" >> possible_prohibited_files.txt
 	find / -type f -name "*.gif" >> possible_prohibited_files.txt
+	find / -type f -name "*.png" >> possible_prohibited_files.txt
+	find / -type f -name "*.bmp" >> possible_prohibited_files.txt
 
 	printf "\nPossible prohibited videos:\n\n" >> possible_prohibited_files.txt
 
