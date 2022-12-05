@@ -3,7 +3,7 @@
 function wait () {
 	echo "should we continue? (y|n)"
 	read -r user_input
-	if [ $user_input == 'y' ]
+	if [ "$user_input" == 'y' ]
 	then
 		echo "continuing..."
 	else
@@ -14,7 +14,7 @@ function wait () {
 function should () {
 	echo "should I \"$1\" (y|n|e)"
 	read -r user_input
-	if [ $user_input == 'y' ]
+	if [ "$user_input" == 'y' ]
 	then
 		$1
 		status
