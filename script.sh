@@ -18,7 +18,7 @@ function should () {
 	then
 		$1
 		status
-	elif [ $user_input == 'n' ]
+	elif [ "$user_input" == 'n' ]
 	then
 		echo -e "\e[1;43m Skipping... \e[0m"
 	else
