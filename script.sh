@@ -34,17 +34,20 @@ function status () {
 		echo -e "\e[1;41m Failure \e[0m"
 	fi
 }
+function install_dependencies () {
+	apt-get install openssl -y
+}
 function update_and_upgrade () {
-	sudo apt-get update && sudo apt-get -y upgrade
+	apt-get update && sudo apt-get -y upgrade
 }
 function check_dir () {
-  if [ -d "$1" ]
-  then
-    echo "$2"
-    wait
-  else
-    echo "dir $2 not found"
-  fi
+	if [ -d "$1" ]
+	then
+		echo "$2"
+		wait
+	else
+		echo "dir $2 not found"
+	fi
 }
 function edit_lightdm () {
 	# Did you mean to use it?
@@ -109,8 +112,19 @@ function search_for_prohibited_files () {
 	find / -type f -name "*.alac" >> possible_prohibited_files.txt
 	find / -type f -name "*.wav" >> possible_prohibited_files.txt
 }
+function change_passwords () {
+	new_password="Cyb3rPatr!0t$"
+	users=$(cat /etc/passwd | cut -d ":" -f1)
+	for user in $users
+	do
+	usermod --password $(echo $new_password | openssl passwd -1 -stdin) $user
+	echo "Changed password for user $user"
+	done
+}
+should install_dependencies
 should update_and_upgrade
 should edit_lightdm
 should enable_ufw_firewall
 should enable_clamtk
 should search_for_prohibited_files
+should change_passwords
