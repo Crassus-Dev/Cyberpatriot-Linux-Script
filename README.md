@@ -13,7 +13,7 @@ This bash script is designed to automate common tasks for the Linux portion of t
  - Open a terminal.
  - Navigate to the directory where the script is located.
  - Make the script executable: chmod +x main.sh
- - Run the script: sudo ./script.sh
+ - Run the script: sudo ./main.sh
  - The script will prompt you with options and information related to each task. Enter your choice as requested.
 
 **Contributing**
