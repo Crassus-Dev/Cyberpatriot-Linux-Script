@@ -11,7 +11,7 @@ This bash script is designed to automate common tasks for the Linux portion of t
 **Usage**
 
  - Open a terminal.
- - Clone the repository: ```bash git clone https://github.com/Crassus-Dev/Cyberpatriot-Linux-Script```
+ - Clone the repository: ```git clone https://github.com/Crassus-Dev/Cyberpatriot-Linux-Script```
  - Navigate to the directory where the script is located: ```cd Cyberpatriot-Linux-Script```
  - Make the script executable: ```chmod +x main.sh```
  - Run the script: ```sudo ./main.sh```
