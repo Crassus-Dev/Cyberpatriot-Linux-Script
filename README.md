@@ -22,4 +22,4 @@ Feel free to contribute to this script by suggesting improvements, reporting iss
 
 **License**
 
-This project is licensed under the GNU Public License 3.0. Please abide by the rules laid out in the [a relative link](LICENSE).
+This project is licensed under the GNU Public License 3.0. Please abide by the rules laid out in the [License](LICENSE).
