@@ -12,10 +12,14 @@ This bash script is designed to automate common tasks for the Linux portion of t
 
  - Open a terminal.
  - Navigate to the directory where the script is located.
- - Make the script executable if necessary: chmod +x main.sh
+ - Make the script executable: chmod +x main.sh
  - Run the script: sudo ./script.sh
  - The script will prompt you with options and information related to each task. Enter your choice as requested.
 
 **Contributing**
 
 Feel free to contribute to this script by suggesting improvements, reporting issues, or submitting pull requests. Your contributions are greatly appreciated!
+
+**License**
+
+This project is licensed under the GNU Public License 3.0. Please abide by the rules laid out in the [a relative link](LICENSE).
