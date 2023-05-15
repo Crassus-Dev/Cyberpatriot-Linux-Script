@@ -1,4 +1,4 @@
-**# Cyberpatriot-Ubuntu-Script**
+**# Cyberpatriot-Linux-Script**
 
 This bash script is designed to automate common tasks for the Linux portion of the CyberPatriot competition. It aims to streamline your workflow and assist with various system administration tasks. The script includes functions for user management, file and directory operations, system information, security measures, logging and monitoring, system maintenance, network configuration, service management, system updates, and more.
 
