@@ -4,7 +4,7 @@ This bash script is designed to automate common tasks for the Linux portion of t
 
 **Prerequisites:**
 
- - This script assumes you are running it on a Linux system.
+ - This script assumes you are running it on a Linux system that is based on Debian. (Script uses apt as its package manager)
  - Ensure that you have sufficient permissions to execute the tasks defined in the script.
  - Familiarity with the Linux command line is recommended.
 
