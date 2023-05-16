@@ -57,6 +57,11 @@ source_files() {
   done
 }
 
+if [ "$EUID" -ne 0 ]
+	then echo "Please run as root"
+	exit
+fi
+
 source_files
 should install_dependencies
 should update_and_upgrade
