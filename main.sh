@@ -43,7 +43,7 @@ function check_dir () {
 		echo "dir $2 not found"
 	fi
 }
-# Function to source and run all files from a folder
+# Function to source all files from the functions folder
 source_files() {
   # Get the directory path of the script
   script_dir=$(dirname "$0")
