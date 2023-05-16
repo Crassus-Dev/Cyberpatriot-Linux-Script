@@ -2,6 +2,9 @@
 
 This bash script is designed to automate common tasks for the Linux portion of the CyberPatriot competition. It aims to streamline your workflow and assist with various system administration tasks. The script includes functions for user management, file and directory operations, system information, security measures, logging and monitoring, system maintenance, network configuration, service management, system updates, and more.
 
+**Warning:**
+This script should only be run inside a sandboxed enviroment. The script has features such as setting all users passwords, such features are meant to simplify the actual competition, but should not be actually used on a real life machine(for obvious reasons).
+
 **Prerequisites:**
 
  - This script assumes you are running it on a Linux system that is based on Debian. (Script uses apt as its package manager)
